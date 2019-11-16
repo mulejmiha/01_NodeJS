@@ -25,3 +25,6 @@ Write npm init in your command prompt to create the package.json file. And then 
 
 ## package-lock.json
 In a project, we can have a really high number of dependencies installed, and they quite frequently require updates. So to avoid the depencedies hell and prevent the user to install the same module twice, we have a package-lock.json file which stores all your dependencies and their version.
+
+
+Author: Miha Mulej
