@@ -1,0 +1,23 @@
+{
+  "name": "class-example-node",
+  "description": "NodeJS project for ECE class",
+  "version": "1.0.0",
+  "main": "Hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "nodemon": "^1.19.4",
+    "foo": "1.0.0",
+    "bar": ">1.0.0", 
+    "baz": "1.2.x", 
+    "boo": "owner/repo", 
+    "asd": "[git url]", 
+    "local": "file:/path/to/file",
+    "tar": "http://web.site/my.tar.gz"
+  },
+  "devDependencies": {}  
+}
