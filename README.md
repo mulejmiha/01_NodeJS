@@ -8,8 +8,7 @@ I created two files: index.js and handles.js
 
 index.js: Firstly, we import http and  Node url module with 'require', then we create the server with 'http.createServer' and we start it on the port 8080 with local host (localhost:8080)
 
-handles.js: In the handles file, we define the server's callback function. Firstly, we take some html code for the text that is displayed on the web page.
-Then we create a module where we write the html content and export it so the index.js file can take the text and display it on the page.
+handles.js: In the handles file, we define the server's callback function. We wrote an if statement if the url path is default (http://localhost:8080), the page displays hello anonymous, if the url path is http://localhost:8080/hello?Name=Miha, it displays hello Miha whats up, and if Name isn't equal to Miha, it displays Who is this? text.
 
 ## Dependencies
 Install dependencies with:
