@@ -21,7 +21,12 @@ const serverHandle = function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   
   if (path === '/hello' && 'name' in params) {
-    res.write('Hello ' + params['name'])
+    if(params['name'] == 'Miha'){
+      res.write('Hello ' + params['name'] + 'Whats up')
+    }else {
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      res.write('Not found man ')
+    }
   } else {
     res.write('Hello anonymous')
   }
